@@ -19,6 +19,7 @@ from camara import views
 from django.conf  import settings
 from django.conf.urls.static import  static
 from clinico import views as viewsClinico
+from mecanicosPacientes import views as viewsmecanicosPacientes
 
 
 urlpatterns = [
@@ -39,6 +40,9 @@ urlpatterns = [
     path('motivoInvidente/', viewsClinico.motivoInvidente),
     path('resMotivoInvidente/', viewsClinico.resMotivoInvidente),
     path('prueba/', viewsClinico.prueba),
+    path('manejoLuz/', viewsmecanicosPacientes.manejoLuz),
+    path('prenderLuz/', viewsmecanicosPacientes.prenderLuz),
+    path('apagarLuz/', viewsmecanicosPacientes.apagarLuz),
 
 
 

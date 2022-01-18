@@ -7,6 +7,7 @@ import numpy as np
 import pyttsx3
 import speech_recognition as sr
 
+
 from django.db.models.functions import Cast, Coalesce
 from django.utils.timezone import now
 from django.db.models import Avg, Max, Min
